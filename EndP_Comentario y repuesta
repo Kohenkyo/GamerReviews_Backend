@@ -1,0 +1,47 @@
+ Endpoints disponibles
+
+1) POST → https://localhost:0000/api/comentario/add-comentario
+
+Body JSON:
+
+{
+  "comentario": "Muy buen juego",
+  "puntuacion": 5,
+  "usuarioId": 1,
+  "juegoId": 1
+}
+2) PATCH → api/comentario/update-comentario
+
+{
+  "comentarioId": 1,
+  "nuevoTexto": "Actualizado: el juego está buenísimo",
+  "nuevaPuntuacion": 4
+}
+
+3) GET → api/comentario/get-comentarios/{juegoId}
+
+Ejemplo: https://localhost:0000/api/comentario/get-comentarios/2
+
+4) DELETE → api/comentario/delete-comentario/{comentarioId}
+
+Ejemplo: https://localhost:0000/api/comentario/delete-comentario/3
+
+********** RESPUESTAS **************************
+1) POST → api/respuesta/add-respuesta
+
+{
+  "comentario": "Coincido totalmente!",
+  "comentarioId": 1,
+  "usuarioId": 2
+}
+
+2) GET → api/respuesta/get-respuestas/{comentarioId}
+
+3) DELETE → api/respuesta/delete-respuesta/{respuestaId}
+
+4) PATCH → api/respuesta/update-respuesta
+
+{
+  "respuestaId": 2,
+  "nuevoTexto": "Editado: concuerdo todavía más"
+}
