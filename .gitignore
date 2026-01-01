@@ -12,6 +12,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+GamerReviewsApi/appsettings.Development.json
+GamerReviewsApi/appsettings.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
