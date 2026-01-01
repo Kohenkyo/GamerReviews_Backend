@@ -60,8 +60,7 @@ https://localhost:7292/api
 When running in Development environment, access the interactive API documentation:
 https://localhost:7292/swagger/index.html
 
-###
+### Notes
 - Frontend repository: [GamerReviews_Frontend](https://github.com/Kohenkyo/GamerReviews)
-
 
 *This Repository is a copy of the original project that was developed with a team.
