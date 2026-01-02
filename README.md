@@ -38,7 +38,25 @@ Tables and stored procedures on the database.sql file on the repository
 
 ### 4. Configure environment variables
 Create an `appsettings.Development.json` file in the API project root with the following structure:
-{ "ConnectionStrings": { "DefaultConnection": "Server=(localdb)\mssqllocaldb;Database=GamerReviewsDb;Trusted_Connection=True;MultipleActiveResultSets=true" }, "JWT": { "Key": "<your-secret-key-min-32-chars>", "Issuer": "GamerReviews", "Audience": "GamerReviewsUsers", "ExpiresInMinutes": 60 } }
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "DefaultConnection": "Server=(localdb)\mssqllocaldb;Database=GamerReviewsDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "Jwt": {
+    "Key": "<your-secret-key-min-32-chars>",
+    "Issuer": "localhost",
+    "Audience": "localhost",
+    "ExpiresInMinutes": 60
+  }
+}
+
 
 Alternatively, set environment variables:
 **Windows PowerShell:**
