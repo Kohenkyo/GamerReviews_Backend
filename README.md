@@ -19,9 +19,7 @@ A .NET 8-based backend Web API that powers the GamerReviews application. Provide
 
 - .NET 8 and ASP.NET Core Web API
 - Entity Framework Core (migrations and data access)
-- AutoMapper (DTO mapping)
-- FluentValidation (request validation)
-- Swashbuckle / Swagger (API documentation)
+- Swagger (API documentation)
 - JWT Bearer Authentication (token-based security)
 - SQL Server or SQLite as database provider
 
