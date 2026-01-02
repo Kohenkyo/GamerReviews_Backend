@@ -26,16 +26,21 @@ A .NET 8-based backend Web API that powers the GamerReviews application. Provide
 ## Installation
 
 ### 1. Clone the repository
+```
 git clone https://github.com/Kohenkyo/GamerReviews_Backend.git cd GamerReviews_Backend
+```
 
 ### 2. Restore and build
+```
 dotnet restore dotnet build
+```
 
 ### 3. Import the database
 Tables and stored procedures on the database.sql file on the repository
 
 ### 4. Configure environment variables
 Create an `appsettings.Development.json` file in the API project root with the following structure:
+```
 {
   "Logging": {
     "LogLevel": {
@@ -54,17 +59,24 @@ Create an `appsettings.Development.json` file in the API project root with the f
     "ExpiresInMinutes": 60
   }
 }
+```
 
 
 Alternatively, set environment variables:
 **Windows PowerShell:**
+```
 $env:ConnectionStrings__DefaultConnection = "Server=(localdb)\mssqllocaldb;Database=GamerReviewsDb;Trusted_Connection=True;" $env:JWT__Key = "<your-secret-key>" $env:JWT__Issuer = "GamerReviews" $env:JWT__Audience = "GamerReviewsUsers"
+```
 
 **Linux/macOS:**
+```
 export ConnectionStrings__DefaultConnection="Server=localhost;Database=GamerReviewsDb;User Id=sa;Password=your-password;" export JWT__Key="<your-secret-key>"
+```
 
 ### 5. Run the API
+```
 dotnet run --urls "https://localhost:7292"
+```
 
 The API will be available at `https://localhost:7292`
 
