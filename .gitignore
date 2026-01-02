@@ -12,8 +12,6 @@
 *.user
 *.userosscache
 *.sln.docstates
-GamerReviewsApi/appsettings.Development.json
-GamerReviewsApi/appsettings.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -484,5 +482,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+GamerReviewsApi/appsettings.Development.json
 GamerReviewsApi/appsettings.json
-GamerReviewsApi/appsettings.json
+appsettings.Development.json
+appsettings.json
